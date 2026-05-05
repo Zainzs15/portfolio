@@ -8,21 +8,22 @@ function ProjectCard({
   url,
   tags,
   accent,
+  imageUrl,
 }: {
   title: string;
   description: string;
   url: string;
   tags: string[];
   accent: string;
+  imageUrl: string;
 }) {
   return (
     <div className="project-card-wrap" data-aos="fade-up">
       <article className="project-card">
-        <div
-          className="project-thumb"
-          style={{ background: accent }}
-          aria-hidden
-        />
+        <div className="project-thumb" aria-hidden>
+          <img className="project-thumb-img" src={imageUrl} alt="" loading="lazy" />
+          <div className="project-thumb-accent" style={{ background: accent }} />
+        </div>
         <div className="project-body">
           <h3 className="project-title">{title}</h3>
           <p className="project-desc">{description}</p>
@@ -77,6 +78,7 @@ export function Projects() {
                 url={p.url}
                 tags={p.tags}
                 accent={p.accent}
+                imageUrl={p.imageUrl}
               />
             ))}
           </div>
@@ -95,6 +97,7 @@ export function Projects() {
                 url={p.url}
                 tags={p.tags}
                 accent={p.accent}
+                imageUrl={p.imageUrl}
               />
             ))}
           </div>

@@ -7,6 +7,7 @@ export type ProjectItem = {
   url: string;
   tags: string[];
   accent: string;
+  imageUrl: string;
   category: ProjectCategory;
 };
 
@@ -19,6 +20,8 @@ export const websiteProjects: ProjectItem[] = [
     url: 'http://www.ziahomeopethic.online',
     tags: ['HTML', 'CSS', 'Responsive'],
     accent: 'linear-gradient(135deg, #0d9488, #14b8a6)',
+    imageUrl:
+      'https://unsplash.com/photos/pt0nGH-NvoA/download?force=true&w=1400',
     category: 'website',
   },
   {
@@ -29,6 +32,8 @@ export const websiteProjects: ProjectItem[] = [
     url: 'https://quizbyzain.vercel.app',
     tags: ['React', 'Auth', 'Charts'],
     accent: 'linear-gradient(135deg, #db2777, #f59e0b)',
+    imageUrl:
+      'https://unsplash.com/photos/f-OwYIg1Rpo/download?force=true&w=1400',
     category: 'website',
   },
   {
@@ -39,6 +44,8 @@ export const websiteProjects: ProjectItem[] = [
     url: 'https://avernusbyzain.vercel.app',
     tags: ['Landing', 'UI', 'Corporate'],
     accent: 'linear-gradient(135deg, #1e40af, #0ea5e9)',
+    imageUrl:
+      'https://unsplash.com/photos/AQuUdQH-9N0/download?force=true&w=1400',
     category: 'website',
   },
 ];
@@ -52,6 +59,8 @@ export const gameProjects: ProjectItem[] = [
     url: 'https://tictacbyzain.vercel.app',
     tags: ['JavaScript', 'AI', 'Neon UI'],
     accent: 'linear-gradient(135deg, #7c3aed, #ec4899)',
+    imageUrl:
+      'https://unsplash.com/photos/fBUeYcEm_i0/download?force=true&w=1400',
     category: 'game',
   },
   {
@@ -62,6 +71,8 @@ export const gameProjects: ProjectItem[] = [
     url: 'https://flappybirdzain.vercel.app',
     tags: ['Canvas', 'Arcade', 'Themes'],
     accent: 'linear-gradient(135deg, #eab308, #f97316)',
+    imageUrl:
+      'https://unsplash.com/photos/29W9RscuUMw/download?force=true&w=1400',
     category: 'game',
   },
   {
@@ -72,6 +83,8 @@ export const gameProjects: ProjectItem[] = [
     url: 'https://testtubebyzain.vercel.app',
     tags: ['React', 'Game Logic', 'Levels'],
     accent: 'linear-gradient(135deg, #2563eb, #06b6d4)',
+    imageUrl:
+      'https://unsplash.com/photos/UC6eyk4hNJE/download?force=true&w=1400',
     category: 'game',
   },
 ];
